@@ -9,5 +9,5 @@ Chrome:
 
 Firefox:
 1) Navigate to about:debugging
-2) elect the Add-ons tab
+2) Select the Add-ons tab
 3) Click Load Temporary Add-on, navigate to your extension directory, and select any file within the extension directory
