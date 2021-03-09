@@ -1,8 +1,14 @@
 // Runs cleanup on the document title
 let cleanup = word => {
-    let shitToRemove = document.getElementsByClassName('todos-count');
-    if (shitToRemove.length === 1) {
-        shitToRemove[0].remove();
+    let shitToRemove = [];
+    shitToRemove.push(document.getElementsByClassName('todos-count'));
+    shitToRemove.push(document.getElementsByClassName('merge-requests-count'));
+    if (shitToRemove.length > 0) {
+        for (key in shitToRemove) {
+            if (shitToRemove[key].length === 1) {
+                shitToRemove[key][0].remove();
+            }
+        }
     }
 }
 
